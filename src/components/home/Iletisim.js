@@ -35,7 +35,7 @@ const Iletisim = (props) => {
                     <div
                         className={`p-1 lg:p-5 bg-${
                             lightTheme ? "isabelline" : "black"
-                        } transition-all duration-500 bg-opacity-60 lg:w-full z-20 absolute w-screen h-full lg:h-2/3 flex flex-col items-center justify-center pt-36 lg:pt-0 px-3 lg:rounded-xl shadow-lg`}>
+                        } transition-all duration-500 bg-opacity-60 lg:w-full z-20 absolute w-screen h-full lg:h-2/3 flex flex-col items-center justify-start lg:justify-center pt-36 lg:pt-0 px-3 lg:rounded-xl shadow-lg`}>
                         <div
                             className={`w-full pl-2 lg:pl-10 lg:w-full flex flex-col items-center justify-center`}>
                                 <form className="px-10 w-full" action={'https://api.web3forms.com/submit'} method={'post'}>
