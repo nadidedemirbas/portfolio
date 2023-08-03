@@ -15,7 +15,7 @@ export default function NavBar(props) {
                         props.lightTheme ? "cadet" : "silverpink"
                     } pb-1 mr-5 font-nadide ml-2 md:ml-0`}>
                     Nadide Demirbas
-                    <span id={'hamburger-button'} className={`ml-3 lg:hidden`}><a href={`#`} onClick={() => setIsOpen(true)}>|||</a></span>
+                    <span id={'hamburger-button'} className={`ml-3 md:hidden`}><a href={`#`} onClick={() => setIsOpen(true)}>|||</a></span>
                 </div>
                 <div className={`hidden md:flex`}>
                     <Link to='/'>
@@ -45,7 +45,7 @@ export default function NavBar(props) {
                     </div>
                 </div>
             </div>
-            <div id={'sidebar'} className={`fixed left-0 top-0 h-full w-2/4 ${isOpen ? 'block' : 'hidden'} lg:hidden bg-${props.background} transition ease-in-out`}>
+            <div id={'sidebar'} className={`fixed left-0 top-0 h-full w-2/4 ${isOpen ? 'block' : 'hidden'} md:hidden bg-${props.background} transition ease-in-out`}>
                 <a href="#" className={'p-3'} onClick={() => setIsOpen(false)}>
                     <div id={'exit-button'} className={`absolute top-2 right-2 p-3 text-2xl text-isabelline`}>X</div>
                 </a>
