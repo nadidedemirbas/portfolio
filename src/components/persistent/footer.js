@@ -14,7 +14,7 @@ export default function Footer(props) {
         {props.lightTheme ? <FiMoon /> : <FiSun />}
       </div>
       <span
-          className={`absolute bottom-5 self-justify-center text-${
+          className={`hidden md:block absolute bottom-5 self-justify-center text-${
               props.lightTheme ? "independence" : "silverpink"
           } lg:text-silverpink text-xs z-30`}>
             © 2023
