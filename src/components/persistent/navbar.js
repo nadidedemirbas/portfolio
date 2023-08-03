@@ -13,22 +13,28 @@ export default function NavBar(props) {
                 <div
                     className={`text-xl lg:text-silverpink text-${
                         props.lightTheme ? "cadet" : "silverpink"
-                    } pb-1 mr-5 font-nadide ml-2 md:ml-0`}>
+                    } pb-1 mr-5 font-nadide ml-2 md:ml-0 flex items-center`}>
                     Nadide Demirbas
-                    <span id={'hamburger-button'} className={`ml-3 md:hidden`}><a href={`#`} onClick={() => setIsOpen(true)}>|||</a></span>
+                    <span id={'hamburger-button'} className={`ml-4 md:hidden border-2 border-silverpink p-1 rounded-md`}>
+                        <a href={`#`} onClick={() => setIsOpen(true)}>
+                            <svg className="fill-current h-4 w-4" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path
+                                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                        </a>
+                    </span>
                 </div>
                 <div className={`hidden md:flex`}>
                     <Link to='/'>
-                        <div className={`text-isabelline ml-5 text-sm`}>Ana Sayfa</div>
+                        <div className={`text-isabelline hover:text-silverpink ml-5 text-sm`}>Ana Sayfa</div>
                     </Link>
                     <Link to='/hakkimda'>
-                        <div className={`text-isabelline ml-5 text-sm`}>Hakkımda</div>
+                        <div className={`text-isabelline hover:text-silverpink ml-5 text-sm`}>Hakkımda</div>
                     </Link>
                     <Link to='/isler'>
-                        <div className={`text-isabelline ml-5 text-sm`}>Yaptığım İşler</div>
+                        <div className={`text-isabelline hover:text-silverpink ml-5 text-sm`}>Yaptığım İşler</div>
                     </Link>
                     <Link to='/iletisim'>
-                        <div className={`text-isabelline ml-5 text-sm`}>İletişim</div>
+                        <div className={`text-isabelline hover:text-silverpink ml-5 text-sm`}>İletişim</div>
                     </Link>
                 </div>
 
@@ -47,14 +53,14 @@ export default function NavBar(props) {
             </div>
             <div id={'sidebar'} className={`fixed top-0 h-full w-2/4 ${isOpen ? 'left-0' : '-left-full'} md:-left-full bg-${props.background} transition-all duration-500`}>
                 <a href="#" className={'p-3'} onClick={() => setIsOpen(false)}>
-                    <div id={'exit-button'} className={`absolute top-2 right-2 p-3 text-2xl text-isabelline`}>X</div>
+                    <div id={'exit-button'} className={`absolute top-2 right-2 p-3 text-2xl text-silverpink`}>X</div>
                 </a>
                 <div id={`mobile-menu`} className={`px-5 pt-10`}>
                     <ul>
-                        <li className={'mt-5 mb-5'}><a href={'/'} className={`text-isabelline text-xl`}>Ana Sayfa</a></li>
-                        <li className={'mb-5'}><a href={'/hakkimda'} className={`text-isabelline text-xl`}>Hakkımda</a></li>
-                        <li className={'mb-5'}><a href={'/isler'} className={`text-isabelline text-xl`}>Yaptığım İşler</a></li>
-                        <li className={'mb-5'}><a href={'/iletisim'} className={`text-isabelline text-xl`}>İletişim</a></li>
+                        <li className={'mt-5 mb-5'}><a href={'/'} className={`text-silverpink hover:text-isabelline text-xl`}>Ana Sayfa</a></li>
+                        <li className={'mb-5'}><a href={'/hakkimda'} className={`text-silverpink hover:text-isabelline text-xl`}>Hakkımda</a></li>
+                        <li className={'mb-5'}><a href={'/isler'} className={`text-silverpink hover:text-isabelline text-xl`}>Yaptığım İşler</a></li>
+                        <li className={'mb-5'}><a href={'/iletisim'} className={`text-silverpink hover:text-isabelline text-xl`}>İletişim</a></li>
                     </ul>
                 </div>
             </div>
