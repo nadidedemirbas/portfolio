@@ -45,7 +45,7 @@ export default function NavBar(props) {
                     </div>
                 </div>
             </div>
-            <div id={'sidebar'} className={`fixed left-0 top-0 h-full w-2/4 ${isOpen ? 'block' : 'hidden'} md:hidden bg-${props.background} transition ease-in-out`}>
+            <div id={'sidebar'} className={`fixed top-0 h-full w-2/4 ${isOpen ? 'left-0' : '-left-full'} md:-left-full bg-${props.background} transition-all duration-500`}>
                 <a href="#" className={'p-3'} onClick={() => setIsOpen(false)}>
                     <div id={'exit-button'} className={`absolute top-2 right-2 p-3 text-2xl text-isabelline`}>X</div>
                 </a>
