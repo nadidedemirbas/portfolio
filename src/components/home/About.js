@@ -37,7 +37,7 @@ const About = (props) => {
               lightTheme ? "isabelline" : "black"
             } transition-all duration-500 bg-opacity-60 lg:w-full z-20 absolute w-screen h-full lg:h-2/3 flex flex-col items-center justify-start lg:justify-center pt-36 lg:pt-0 px-3 lg:rounded-xl shadow-lg`}>
             <div
-              className={`w-full pl-2 lg:pl-0 lg:w-full flex flex-col items-center lg:items-center lg:justify-center`}>
+              className={`w-full pl-2 lg:pl-0 lg:w-full flex flex-col items-center lg:items-center lg:justify-center overflow-y-auto`}>
 
               <div className={`mb-3 lg:mb-10 text-6xl lg:text-7xl text-${
                   lightTheme ? "independence" : "silverpink"
