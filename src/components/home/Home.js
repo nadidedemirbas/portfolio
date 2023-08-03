@@ -43,13 +43,13 @@ const Home = (props) => {
               <span
                 className={`transition-all duration-300 text-6xl lg:text-7xl text-${
                   lightTheme ? "cadet" : "isabelline"
-                } mb-3`}>
+                } mb-3 text-center`}>
                 FRONT-END
               </span>
               <span
                   className={`transition-all duration-300 text-4xl lg:text-5xl lg:ml-0.5 text-${
                       lightTheme ? "independence" : "silverpink"
-                  } mb-4`}>
+                  } mb-4 text-center`}>
                 DEVELOPER
                 <span
                     className={`absolute text-${
