@@ -50,14 +50,14 @@ const Home = (props) => {
                   className={`transition-all duration-300 text-4xl lg:text-5xl lg:ml-0.5 text-${
                       lightTheme ? "independence" : "silverpink"
                   } mb-4`}>
-                GELİŞTİRİCİ
+                DEVELOPER
                 <span
                     className={`absolute text-${
                         lightTheme ? "independence" : "silverpink"
                     } text-4xl lg:text-5xl inline ${
                         !dotVisible ? "hidden" : "inline"
                     }`}>
-                  .
+                  |
                 </span>
               </span>
               <Menu lightTheme={lightTheme} contactButton={true} />
